@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>     
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="title"><h1>KALKULATOR TIPÓW</h1></div>
+            <form class="formWrappper">
+                <div class ="alert">Musisz wprowadzić wszystkie parametry</div>
+                <div class="element">
+                    <h2>Jak wysoki jest rachunek?</h2>
+                    <div class="inputWrapper">
+                        <div class="icon"><img class="iconImg" src='img/dolar.png'></div>
+                        <input type="number" min="0" class="input dolar">  
+                    </div>              
+                </div>
+                <div class="element">
+                    <h2>Ile ludzi do podziału?</h2>
+                    <div class="inputWrapper">
+                        <div class="icon"><img class="iconImg" src='img/hipek.png'></div>
+                        <input type="number" min="0" class="input hipek">
+                    </div>
+                </div>
+                <div class="element">
+                    <h2>Jaka była obsługa?</h2>
+                    <select class = "input-service">
+                        <option selected value="0">Wybierz...</option>
+                        <!-- <option value="dobra" class="dobra">Bardzo dobra - 20%</option>
+                        <option value="srednia" class="srednia">Ok - 10%</option>
+                        <option value="zla" class="zla">Zła - 2%</option> -->
+                    </select>
+                </div>
+                <button class="przelicz">Przelicz</button>
+            </form>
+
+            <div class="result-loader">
+                <img src="img/loader.gif">
+            </div>
+            <div class="result">
+                <h3>Wartość napiwku: <span class="tip-amount">0 złotych</span></h3>
+                <h3>Z napiwkiem wychodzi łącznie: <span class="total-amount">0 złotych</span></h3>
+                <h3>Czyli każdy płaci: <span class="person-amount">0 złotych</span></h3>
+            </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
